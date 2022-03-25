@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="page.css">
-    <link rel="stylesheet" href="master.css">
     <title>Portfolio</title>
 </head>
     <nav class="navbar">
@@ -16,6 +17,10 @@
                 <li class="links"><a href="#education">Education</a></li>
                 <li class="links"><a href="#about">About me</a></li>
                 <li class="links"><a href="#contact">Contact me</a></li>
+                <li class="links"><a href="https://dw.convertfiles.com/files/0295382001648233600/arvis_suksts0.zip"><button class="download_btn">CV</button></a></li>
+                <li class="links"><a href="https://dw.convertfiles.com/files/0764933001648234159/bootcamp.zip"><button class="download_btn">Kursa darbi</button></a></li>
+
+                <!-- https://dw.convertfiles.com/files/0764933001648234159/bootcamp.zip -->
             </ul>
     </nav>
     <section id="home">
@@ -27,12 +32,12 @@
     <section id="portfolio">
         <h1 class="heading">Portfolio</h1>
         <div class="gallery">
-            <img src="Images/img1.jpg" alt="">
-            <img src="Images/img2.jpg" alt="">
-            <img src="Images/img3.jpg" alt="">
-            <img src="Images/img4.jpg" alt="">
-            <img src="Images/img5.jpg" alt="">
-            <img src="Images/img6.jpg" alt="">
+            <a href="Images/img1.jpg" data-lightbox="mygalery"><img src="Images/img1.jpg" alt=""></a>
+            <a href="Images/img2.jpg" data-lightbox="mygalery"><img src="Images/img2.jpg" alt=""></a>
+            <a href="Images/img3.jpg" data-lightbox="mygalery"><img src="Images/img3.jpg" alt=""></a>
+            <a href="Images/img4.jpg" data-lightbox="mygalery"><img src="Images/img4.jpg" alt=""></a>
+            <a href="Images/img5.jpg" data-lightbox="mygalery"><img src="Images/img5.jpg" alt=""></a>
+            <a href="Images/img6.jpg" data-lightbox="mygalery"><img src="Images/img6.jpg" alt=""></a>
         </div>
     </section>
     <section id="education">
@@ -82,5 +87,6 @@
         click.addEventListener("click", () => { list.classList.toggle('newlist'); });
     </script>
 </body>
-    <script type="text/javascript" src="script.js?v=2"></script>
+    <script type="text/javascript" src="script.js?v=2"></script>    
+    <script src="lightbox-plus-jquery.min.js"></script>
 </html>
