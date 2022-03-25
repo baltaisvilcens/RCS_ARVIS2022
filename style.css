@@ -1,0 +1,84 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+body, html { 
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    background: url(Images/94821.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container span {
+    color: #fff;
+    font-size: 4vw;
+    font-family:'Merienda One';font-size: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-decoration: none;
+    cursor: default;
+}
+
+.enter {    
+    color: #fff;
+    font-size: 3vw;
+    font-family:'Merienda One';font-size: 27px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-decoration: none;
+    transition: 1s;
+}
+.enter:hover {
+    background: rgba(0, 0, 0, 0.26);
+    transition: 1s;
+}
+
+.ikonas svg {
+    fill:#fff;
+    text-decoration: none;
+    margin: auto;
+    height: 40px;
+    transition: 2s;
+    padding: 10px;
+}
+
+.ikonas {
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 85%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.ikonas svg:hover { 
+    transition: 2s;
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+.facebook {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 400px){}

@@ -1,0 +1,381 @@
+* { 
+    margin: 0; 
+    padding: 0;
+}
+
+html { 
+    max-width: 1400px;
+    margin: auto;
+}
+
+body { 
+    margin: auto;
+    max-width: 1400px;
+    background: black
+}
+
+section { 
+    display: flex;
+    flex-direction: column;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+/* nav bar */
+.navbar { 
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.click { 
+    opacity: 0;
+}
+.navbar::before { 
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul { 
+    display: flex;
+    list-style:none ;
+}
+.navbar ul li { 
+   font-size: 1.1rem;
+}
+.navbar ul li a { 
+   padding: 5px 20px;
+   text-decoration: none;
+   color: white;
+}
+.navbar ul li a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+/* Home section */
+
+#home { 
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white ;
+}
+#home::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(Images/bilde.jpg) no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+}
+.heading{ 
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+/* Portfolio Section */
+#portfolio { 
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc; 
+}
+#portfolio h1 { 
+    margin: 60px;
+}
+.gallery { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img { 
+    width: 360px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover { 
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Education Section */
+#education {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc; 
+}
+#education h1 { 
+    margin: 60px;
+}
+.columns { 
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+.box { 
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2 { 
+    color: yellow;
+    font-size: 2ren;
+    margin-bottom: 40px;
+}
+.box p { 
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* About section */
+#about { 
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    line-height: 30px;
+    background-color: #000000dc; 
+    border-radius: 20px;
+    box-sizing: border-box;
+
+}
+#about h1 { 
+    color: white;
+    margin: 55px;
+}
+.about { 
+    display: flex;
+    color: white;
+}
+.about img { 
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+}
+.name { 
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 10px;
+}
+.name h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.name.p { 
+    font-size: 1,2rem;
+}
+
+/* Contact section */
+#contact { 
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#contact h1 { 
+    margin: 50px;
+}
+.form{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+#message { 
+    margin: 15px; 
+    padding: 10px;
+    border-radius: 20px;
+}
+.submit { 
+    padding: 15px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+    outline: none;
+}
+.text { 
+    outline: none;
+}
+.submit:hover { 
+    background-color: green;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1166px) {
+   * { 
+    box-sizing: border-box;
+   }
+    body{
+       width: 100%;
+   }
+   .navbar { 
+       display: flex;
+   }
+   .click{
+    opacity: inherit;
+    background-color: #f85f73;
+    }
+    .click:hover {
+    background-color: #B71C1C;
+    }
+    .click {
+        padding: 12px;
+        font-size: 1.2em;
+        font-family: futura Md BT;
+        border: none;
+        outline: none;
+        width:200px;
+        color:#fff;
+        transition: 0.3s;
+    }
+    .links { 
+        display: flex;
+        flex-direction: column;
+    }
+    .list {
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.3s;
+    }
+    .newlist {
+        position: relative;
+        transform: scaleY(1);
+    }
+    .links:hover {
+        background-color: #01579B;
+        transform: scale(1.1);
+    }
+    .navbar { 
+       position: relative;
+   }
+   .navbar ul { 
+    bottom: -120%; 
+    right: 0%;
+    display: grid;
+    position: relative;
+    flex-direction: column;
+
+}
+    nav a  {
+       font-size: 15px;
+   }
+    #home h1 {
+        font-size: 35px; 
+    }
+    #portfolio h1{ 
+       font-size: 35px;
+   }
+    #education { 
+        align-items: center;
+    }
+    #education h1 { 
+        font-size: 35px;
+    }
+    .columns { 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-left: -50px;
+    }
+    .columns h2 { 
+        font-size: 17px;
+    }
+    .columns p { 
+        margin-top: -20px;
+        padding: 0;
+        text-align: center;
+        max-width: 310px;
+        display: block;
+        font-size: 15px;
+    }
+    .box { 
+        margin-left: 40px;
+        height: 100%;
+        width:80%;
+    }
+    .name.p { 
+        display: flex;
+        font-size: 0.92rem;
+        overflow-y: scroll;
+    }
+    #message {
+        width: 350px;
+        height: 120px;
+    }
+    #about { 
+        height: 100%;
+        width: 100%;
+    }
+    .about { 
+        display: flex;
+        flex-direction: column;
+    }
+    #about h1 { 
+        font-size: 35px;
+    }
+    #about h2 { 
+        font-size: 25px;
+    }
+    #about p {
+        display: flex;
+    }
+
+    .name { 
+        margin: auto;
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 90%;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about img { 
+        margin: auto;
+        display: flex;
+        height: 240px;
+        width: 290px;
+        margin-bottom: 40px;
+    }
+
+    #contact h1 { 
+        font-size: 35px;
+        align-items: center;
+    }
+    #contact textarea { 
+        width: 220px;
+    }
+
+}
+  
