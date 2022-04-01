@@ -176,6 +176,7 @@ html {
     color: white;
 }
 .about img { 
+    margin-left: 45px;
     width: 500px;
     height: 400px;
     padding: 0px 30px;
@@ -192,6 +193,36 @@ html {
 }
 .name.p { 
     font-size: 1,2rem;
+}
+
+/* Skill section */
+#skill { 
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+.coding_lang h2 { 
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top:30px; 
+}
+.lang_icons{
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+
+}
+.lang_ico  {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    height: 110px;
+    display: inline-block;
+    transition: 1s ease;
+}
+.lang_ico:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
 }
 
 /* Contact section */
@@ -379,6 +410,9 @@ html {
         margin-bottom: 40px;
     }
 
+    #skill h2 { 
+        margin-left:30px;
+    }
     #contact h1 { 
         font-size: 35px;
         align-items: center;

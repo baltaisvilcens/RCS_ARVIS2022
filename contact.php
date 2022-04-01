@@ -39,7 +39,7 @@
 			],
 
 			// custom message that will be visible at the subject of the email
-			"custom_message"	=> sprintf("%s grib ar tevi sazinaties", $_POST["name"]),
+			"custom_message"	=> sprintf("%s vēlas ar tevi sazināties", $_POST["name"]),
 		];
 
 		$mail = new PHPMailer(true);

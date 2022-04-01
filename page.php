@@ -17,8 +17,8 @@
                 <li class="links"><a href="#education">Education</a></li>
                 <li class="links"><a href="#about">About me</a></li>
                 <li class="links"><a href="#contact">Contact me</a></li>
-                <li class="links"><a href="https://dw.convertfiles.com/files/0295382001648233600/arvis_suksts0.zip"><button class="download_btn">CV</button></a></li>
-                <li class="links"><a href="https://dw.convertfiles.com/files/0764933001648234159/bootcamp.zip"><button class="download_btn">Kursa darbi</button></a></li>
+                <li class="links"><a href="https://drive.google.com/file/d/10-rq-5UdELsH27UwF-dAQHL4GyDZqj1h/view?usp=sharing"><button class="download_btn">CV</button></a></li>
+                <li class="links"><a href="https://drive.google.com/file/d/17fJwRGY03duPde8fladSPC5TgA32Sh5m/view?usp=sharing"><button class="download_btn">Kursa darbi</button></a></li>
 
                 <!-- https://dw.convertfiles.com/files/0764933001648234159/bootcamp.zip -->
             </ul>
@@ -59,7 +59,7 @@
             <img src="Images/profila_bilde.jpg" alt="My pic">
             <div class="name">
                 <h2>Es esmu Arvis Šuksts</h2>
-                <p>Sveiki! Man sauc Arvis Šuksts! Man ir 19 gadi, mācos Web izstrādi Riga Coding School! 
+                <p>Sveiki! Man sauc Arvis Šuksts! Man ir 20 gadi, mācos Web izstrādi Riga Coding School! 
                     Par programmēšanu un mājaslapu veidošanu sāku jau 16 gadu vecumā, izmantojot jau gatavus failus ( Web uzstādīšana caur Filezilla izmantojot IPS un IPB failus, pluginu uzinstalēšana), 
                     protams, vēl esmu palīdzējis veidot ( SA:MP un Minecraft spēļu serverus.) Kā arī šobrīd apgūstu Worldpress zināšanas. Esmu cilvēks, kurš labprāt strādā komandas darbu, kā arī esmu draudzīga persona, 
                     spēju sadarboties ar kolēģiem un izveidot vienu kopēju valodu! 
@@ -68,6 +68,20 @@
                     Protams, arī bez programmēšanas mani piesaista fotografēšana. Savienojot šīs divas lietas varētu sanākt lielisks rezultāts un materiāls. Ar fotografēšanu es varētu palīdzēt gan programmētājiem, gan citiem uzņēmējiem. 
                     Vienmēr esmu gatavs sākt un to nekad nenožēlošu!
                 </p>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <h1 class="heading">Skill</h1>
+        <div class="w_lng">
+            <div class="coding_lang">
+                <h2>Izmanototās programmēšanas valodas mājaslapā</h2>
+                    <div class="lang_icons">
+                        <img src="icons/html.png" alt="html" class="icon1 lang_ico">
+                        <img src="icons/CSS.png" alt="css" class="icon2 lang_ico">
+                        <img src="icons/php.png" alt="php" class="icon3 lang_ico">
+                        <img src="icons/js.png" alt="js" class="icon4 lang_ico">
+                    </div>
             </div>
         </div>
     </section>
